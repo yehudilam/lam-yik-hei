@@ -10,7 +10,7 @@ const DurationText = styled.p`
 
 const Duration = ({
   from, to, minWidth
-                  }) => {
+}) => {
   return (
     <DurationText minWidth={minWidth}>{from} - {to}</DurationText>
   )

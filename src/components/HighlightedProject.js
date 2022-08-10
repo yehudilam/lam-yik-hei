@@ -6,12 +6,16 @@ import clp from '../images/clp-sec-ssa.jpeg';
 import carbonCoins from '../images/carbon-coins.webp';
 import cdcNft from '../images/cdc-nft-home-page.png';
 import alfred from '../images/alfred-shopify-plugin.png';
+import telegram from '../images/telegram-capture-bot.png';
+import roadhk from '../images/roadhk.png';
 import acubeMdx from '../mdx/highlighted-projects/acube.mdx';
-import csMdx from '../mdx/highlighted-projects/clpSec.mdx';
+import csMdx from '../mdx/highlighted-projects/corporateStudio.mdx';
 import clpMdx from '../mdx/highlighted-projects/clpSec.mdx';
 import co2CoinsMdx from '../mdx/highlighted-projects/carbonCoins.mdx';
 import cdcMdx from '../mdx/highlighted-projects/cdcNft.mdx';
 import alfredMdx from '../mdx/highlighted-projects/alfred.mdx';
+import telegramMdx from '../mdx/highlighted-projects/telegramBot.mdx';
+import roadhkMdx from '../mdx/highlighted-projects/roadhk.mdx';
 import {useState} from "react";
 import HighlightedProjectDialog from "./HighlightedProjectDialog";
 import styled from "styled-components";
@@ -79,6 +83,18 @@ const projects = [
       'This was a shopify plugin for Alfred, a logistic service provider. Once installed, the plug-in allows customers to choose and collect what they have bought from a list of locations provided by Alfred. The module involves communicating between Shopify APIs and Alfred APIs, as well as a layout that matches the Shopify shipment and admin pages.',
     ],
     mdx: alfredMdx,
+  },
+  {
+    title: 'Telegram bot',
+    image: telegram,
+    stack: ['Javascript', 'Express', 'Telegram API'],
+    mdx: telegramMdx,
+  },
+  {
+    title: 'RoadHK',
+    image: roadhk,
+    stack: ['PHP', 'Laravel', 'Mysql', 'Vue'],
+    mdx: roadhkMdx
   }
 ]
 
@@ -96,7 +112,6 @@ const ProjectsWrapper = styled.div`
 `;
 
 const HighlightedProject = () => {
-  // todo: add modal
   const [selectedProject, setSelected] = useState(undefined);
 
   return (
