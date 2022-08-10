@@ -35,6 +35,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set legacy peer deps true
+        # hard code for npm
+        run: npm config set legacy-peer-deps true
       - name: Detect package manager
         id: detect-package-manager
         run: |
