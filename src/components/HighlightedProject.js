@@ -27,9 +27,6 @@ const projects = [
     stack: [
       'Kotlin'
     ],
-    description: [
-      'An App for attendance tracking. Employees can use this app to clock in and out, using a combination GPS, Bluetooth beacons and taking photos of the premises. There are two apps in total for this product, one for employees and one for admin purposes.'
-    ],
     mdx: acubeMdx,
   },
   {
@@ -37,9 +34,6 @@ const projects = [
     image: corporateStudio,
     stack: [
       'Typescript', 'Material-UI', 'React',
-    ],
-    description: [
-      'Corporate studio is one of the products from Linklogis. It a dashboard to check up details of a company, say from difference news sources, court news, financial status. Team members mainly located in mainland China (devs) and Hong Kong (other members).',
     ],
     mdx: csMdx
   },
@@ -49,39 +43,24 @@ const projects = [
     stack: [
       'Typescript', 'GraphQL', 'Tailwind CSS', 'Material-UI', 'React',
     ],
-    description: [
-      'A dashboard for displaying various sensors deployed in a indoor premises, which aims to allow the premises owners to understand how to optimize energy usage, while maintaining a high quality indoor environment.',
-      'I was responsible for the frontend, which has a stack of Typescript, GraphQL, tailwind, material-UI. The difficult part was to verify, convert and calculate the time series data points, as well as plotting them without impacting the performance of the page.'
-    ],
     mdx: clpMdx
   },
   {
     title: 'Carbon Coins',
     image: carbonCoins,
     stack: ['React', 'Ant Design', 'Java'],
-    description: [
-      'Carbon coins is a network of Reverse vending machines (RVM). It encourages people to recycle plastic bottles by providing incentives, carboncoins, which can be exchanged for discounts in different merchants.',
-      'I was responsible for the admin panel managing the network of machines, as well as different configurations for the network, for example, the list of barcodes that will be accepted, merchant rewards settings.'
-    ],
     mdx: co2CoinsMdx,
   },
   {
     title: 'Crypto.com/nft',
     image: cdcNft,
     stack: ['Typescript', 'NestJS', 'React'],
-    description: [
-      'I joined [crypto.com](http://crypto.com) with the NFT Team, which by then was still under rapid expansion and development. I was responsible for both frontend (client-facing UI and admin panel) and backend, as well as supporting the product operations.',
-      'Team members located all across south-east Asia, though majority was located in HK.'
-    ],
     mdx: cdcMdx,
   },
   {
     title: 'Alfred Shopify plug-in',
     image: alfred,
     stack: ['Vue.js', 'Express', 'Vuetify', 'Docker'],
-    description: [
-      'This was a shopify plugin for Alfred, a logistic service provider. Once installed, the plug-in allows customers to choose and collect what they have bought from a list of locations provided by Alfred. The module involves communicating between Shopify APIs and Alfred APIs, as well as a layout that matches the Shopify shipment and admin pages.',
-    ],
     mdx: alfredMdx,
   },
   {

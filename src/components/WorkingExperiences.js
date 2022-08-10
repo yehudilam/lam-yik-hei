@@ -12,7 +12,6 @@ const experiences = [
     from: 'Feb 2022',
     to: 'Jul 2022',
     position: 'Full stack developer',
-    description: [],
     mdx: cdcMdx
   },
   {
@@ -20,7 +19,6 @@ const experiences = [
     from: 'Sep 2018',
     to: 'Feb 2022',
     position: 'Frontend developer',
-    description: [],
     mdx: qbsMdx
   },
   {
@@ -28,7 +26,6 @@ const experiences = [
     from: 'Jun 2018',
     to: 'Sep 2018',
     position: 'Developer',
-    description: [],
     mdx: ztoreMdx
   },
   {
@@ -36,7 +33,6 @@ const experiences = [
     from: 'Jan 2017',
     to: 'Jun 2018',
     position: 'Developer',
-    description: [],
     mdx: trifectahMdx
   },
   {
@@ -44,7 +40,6 @@ const experiences = [
     from: 'Oct 2014',
     to: 'Jan 2017',
     position: 'Research Assistant',
-    description: [],
     mdx: cuhkMdx
   },
 ];

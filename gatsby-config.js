@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-postcss',
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,5 +14,13 @@ module.exports = {
     },
     `gatsby-plugin-mdx`,
     `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Lam Yik Hei - Web Developer`,
+        start_url: `/`,
+        icon: `src/images/favicon.png`,
+      },
+    },
   ]
 };
