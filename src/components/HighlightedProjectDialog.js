@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Dialog from '@mui/material/Dialog';
 import styled from 'styled-components';
+import MdxWrapper from "./MdxWrapper";
 
 const ProjectBanner = styled.div`
   max-height: 400px;
@@ -31,9 +32,9 @@ const HighlightedProjectDialog = ({ project, onClose }) => {
           <p>{project.stack.join(', ')}</p>
         </div>
 
-        <div className="mb-4">
+        <MdxWrapper className="mb-4">
           <project.mdx />
-        </div>
+        </MdxWrapper>
       </div>
     </Dialog>
   );

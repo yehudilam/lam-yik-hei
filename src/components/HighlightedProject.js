@@ -14,6 +14,7 @@ import cdcMdx from '../mdx/highlighted-projects/cdcNft.mdx';
 import alfredMdx from '../mdx/highlighted-projects/alfred.mdx';
 import {useState} from "react";
 import HighlightedProjectDialog from "./HighlightedProjectDialog";
+import styled from "styled-components";
 
 const projects = [
   {
@@ -81,20 +82,33 @@ const projects = [
   }
 ]
 
+const ProjectsWrapper = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
+  @media(max-width: 500px){
+    display: block;
+    margin: 0 auto;
+  }
+`;
+
 const HighlightedProject = () => {
   // todo: add modal
   const [selectedProject, setSelected] = useState(undefined);
 
   return (
     <>
-      <div className="flex justify-start items-center flex-wrap">
+      <ProjectsWrapper>
         {projects.map(project => (
           <HighlightedProjectCard
             project={project}
             setSelected={setSelected}
           />
         ))}
-      </div>
+      </ProjectsWrapper>
       <HighlightedProjectDialog
         project={selectedProject}
         onClose={() => setSelected(undefined)}

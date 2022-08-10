@@ -5,19 +5,21 @@ import HighlightedProject from "../components/HighlightedProject";
 import MoreAboutMe from '../mdx/moreAboutMe.mdx';
 import {Divider} from "@mui/material";
 import WorkingExperiences from "../components/WorkingExperiences";
+import Duration from "../components/Duration";
+import MdxWrapper from "../components/MdxWrapper";
 
-// todo: smaller padding for mobile, larger for other devices
 const MainContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 24px;
   
   & a {
     color: blue;
   }
   
-  & ul {}
-  & ul > li {}
+  @media(max-width: 500px){
+    padding: 24px 12px;
+  }
 `;
 
 const BannerImage = styled.img`
@@ -25,6 +27,14 @@ const BannerImage = styled.img`
   object-fit: cover;
   width: 100%;
 `;
+
+const SectionDivider = () => (
+  <Divider
+    sx={{
+      margin: '0 1rem 2rem 1rem',
+    }}
+  />
+);
 
 const IndexPage = () => {
   return (
@@ -34,7 +44,7 @@ const IndexPage = () => {
       </div>
 
       <MainContent>
-        <h1 className="text-6xl mb-8">
+        <h1 className="text-6xl mb-6">
           LAM Yik Hei
         </h1>
 
@@ -57,7 +67,7 @@ const IndexPage = () => {
 
         </section>
 
-        <Divider className="mb-8" />
+        <SectionDivider />
 
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Highlighted projects</h2>
@@ -65,12 +75,12 @@ const IndexPage = () => {
           <HighlightedProject />
         </section>
 
-        <Divider className="mb-8" />
+        <SectionDivider />
 
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Location and Visa</h2>
 
-          <p>
+          <p className="mb-1">
             I am currently in Hong Kong, and will relocate permanently to UK in September 2022.
           </p>
 
@@ -79,11 +89,11 @@ const IndexPage = () => {
           </p>
         </section>
 
-        <Divider className="mb-8" />
+        <SectionDivider />
 
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Skills</h2>
-          <p>
+          <p className="mb-1">
             HTML, CSS, Javascript, Typescript, React, Vue, Nest, GraphQL, jQuery, Elasticsearch, PHP, Laravel, Kotlin, Flutter, SQL, Docker, MongoDB, Firebase
           </p>
           <p>
@@ -91,15 +101,15 @@ const IndexPage = () => {
           </p>
         </section>
 
-        <Divider className="mb-8" />
+        <SectionDivider />
 
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Education</h2>
 
           <div>
-            <div className="flex justify-between items-center">
-              <h3 className="text-2xl">Chinese University of Hong Kong</h3>
-              <p className="text-gray-600">2011 - 2014</p>
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="text-xl font-semibold flex-1">Chinese University of Hong Kong</h3>
+              <Duration from="2011" to="2014" />
             </div>
             <div>
               <p>Bachelor of Science, Major in Physics</p>
@@ -107,12 +117,14 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <Divider className="mb-8" />
+        <SectionDivider />
 
         <section className="mb-8">
-          <h2 className="text-3xl">More about me</h2>
+          <h2 className="text-3xl mb-2">More about me</h2>
 
-          <MoreAboutMe />
+          <MdxWrapper>
+            <MoreAboutMe />
+          </MdxWrapper>
         </section>
       </MainContent>
 
