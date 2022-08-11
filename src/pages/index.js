@@ -4,10 +4,10 @@ import img6484 from '../images/resized-IMG_6484.jpg';
 import lyhProfile from '../images/lam-yik-hei-profile.png';
 import HighlightedProject from "../components/HighlightedProject";
 import MoreAboutMe from '../mdx/moreAboutMe.mdx';
-import {Divider} from "@mui/material";
 import WorkingExperiences from "../components/WorkingExperiences";
 import Duration from "../components/Duration";
 import MdxWrapper from "../components/MdxWrapper";
+import SectionDivider from "../components/SectionDivider";
 
 const MainContent = styled.div`
   max-width: 1200px;
@@ -29,14 +29,6 @@ const BannerImage = styled.img`
   object-fit: cover;
   width: 100%;
 `;
-
-const SectionDivider = () => (
-  <Divider
-    sx={{
-      margin: '0 1rem 2rem 1rem',
-    }}
-  />
-);
 
 const ProfilePic = styled.img`
   height: 120px;
