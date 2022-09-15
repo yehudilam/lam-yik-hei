@@ -91,20 +91,6 @@ const IndexPage = () => {
         <SectionDivider />
 
         <section className="mb-8">
-          <h2 className="text-3xl mb-2">Location and Visa</h2>
-
-          <p className="mb-1">
-            I am currently in Hong Kong, and will relocate permanently to UK in September 2022.
-          </p>
-
-          <p>
-            I have permission to work in both Hong Kong and UK (BNO Visa), so no visa sponsorship and relocation package will be required.
-          </p>
-        </section>
-
-        <SectionDivider />
-
-        <section className="mb-8">
           <h2 className="text-3xl mb-2">Skills</h2>
           <p className="mb-1">
             HTML, CSS, Javascript, Typescript, React, Vue, Nest, GraphQL, jQuery, Elasticsearch, PHP, Laravel, Kotlin, Flutter, SQL, Docker, MongoDB, Firebase
