@@ -93,10 +93,13 @@ const IndexPage = () => {
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Skills</h2>
           <p className="mb-1">
-            HTML, CSS, Javascript, Typescript, React, Vue, Nest, GraphQL, jQuery, Elasticsearch, PHP, Laravel, Kotlin, Flutter, SQL, Docker, MongoDB, Firebase
+            HTML, CSS, Javascript, Typescript, React, Vue, NestJS, GraphQL, jQuery, Elasticsearch, PHP, Laravel, Kotlin, Flutter, SQL, Docker, MongoDB, Firebase
           </p>
           <p>
-            Jira, Agile, Scrum, Git
+            Material-UI, Tailwind CSS, Next.js, Gatsby
+          </p>
+          <p>
+            Jira, Agile, Scrum, Git, Postman, Figma
           </p>
         </section>
 
