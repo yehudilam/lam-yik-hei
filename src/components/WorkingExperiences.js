@@ -4,9 +4,17 @@ import qbsMdx from '../mdx/experiences/qbs.mdx';
 import ztoreMdx from '../mdx/experiences/ztore.mdx';
 import trifectahMdx from '../mdx/experiences/trifectah.mdx';
 import cuhkMdx from '../mdx/experiences/cuhk.mdx';
+import edfMdx from '../mdx/experiences/edf';
 import ExperienceItem from "./ExperienceItem";
 
 const experiences = [
+  {
+    company: 'EDF UK',
+    from: 'Oct 2022',
+    to: 'Present',
+    position: 'Software Engineer',
+    mdx: edfMdx,
+  },
   {
     company: 'Crypto.com NFT',
     from: 'Feb 2022',
