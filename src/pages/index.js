@@ -128,8 +128,11 @@ const IndexPage = () => {
             <MoreAboutMe />
           </MdxWrapper>
         </section>
-      </MainContent>
 
+        <footer>
+          <img src="https://github.com/yehudilam/lam-yik-hei/workflows/Deploy%20to%20Firebase%20Hosting%20on%20merge/badge.svg" alt="deployment status" />
+        </footer>
+      </MainContent>
     </main>
   )
 }
