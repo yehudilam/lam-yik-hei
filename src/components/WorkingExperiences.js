@@ -9,7 +9,7 @@ import ExperienceItem from "./ExperienceItem";
 
 const experiences = [
   {
-    company: 'EDF UK',
+    company: 'EDF Energy',
     from: 'Oct 2022',
     to: 'Present',
     position: 'Software Engineer',
