@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "styled-components";
 
 const DurationText = styled.p<{
@@ -11,15 +11,19 @@ const DurationText = styled.p<{
 `;
 
 const Duration = ({
-  from, to, minWidth
+  from,
+  to,
+  minWidth,
 }: {
   from: string;
   to: string;
   minWidth?: string;
 }) => {
   return (
-    <DurationText minWidth={minWidth}>{from} - {to}</DurationText>
-  )
+    <DurationText minWidth={minWidth}>
+      {from} - {to}
+    </DurationText>
+  );
 };
 
 export default Duration;

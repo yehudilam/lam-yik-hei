@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 // import Dialog from '@mui/material/Dialog';
-import styled from 'styled-components';
+import styled from "styled-components";
 import MdxWrapper from "./MdxWrapper";
 import SectionDivider from "./SectionDivider";
-import Dialog from './Dialog';
-import IconButton from './IconButton';
+import Dialog from "./Dialog";
+import IconButton from "./IconButton";
 // import TocIcon from '@mui/icons-material/Toc';
 // import Close from '@mui/icons-material/Close';
 // import {IconButton} from "@mui/material";
@@ -23,32 +23,32 @@ const DialogBanner = styled.img`
 
 const ProjectDialogContent = styled.section`
   padding: 0 60px;
-  
-  @media(max-width: 500px){
+
+  @media (max-width: 500px) {
     padding: 0 40px;
   }
 `;
 
-export interface Project{
+export interface Project {
   title: string;
   image: string;
   stack: string[];
   mdx: any;
 }
 
-const HighlightedProjectDialog = ({ project, onClose }: {
-  project?: Project,
-  onClose: () => void,
+const HighlightedProjectDialog = ({
+  project,
+  onClose,
+}: {
+  project?: Project;
+  onClose: () => void;
 }) => {
-  if(!project){
-    return <></>
+  if (!project) {
+    return <></>;
   }
 
   return (
-    <Dialog
-      open={!!project}
-      onClose={onClose}
-    >
+    <Dialog open={!!project} onClose={onClose}>
       <div className="pb-4 relative">
         <ProjectBanner className="mb-4">
           <DialogBanner src={project.image} alt={project.title} />
@@ -62,7 +62,7 @@ const HighlightedProjectDialog = ({ project, onClose }: {
 
             <div className="ml-1 mr-2">Stack:</div>
 
-            <p>{project.stack.join(', ')}</p>
+            <p>{project.stack.join(", ")}</p>
           </div>
 
           <SectionDivider />
@@ -74,20 +74,20 @@ const HighlightedProjectDialog = ({ project, onClose }: {
 
         <div className="absolute right-0 top-0 pr-2 pt-2">
           <IconButton onClick={onClose}>
-          <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
           </IconButton>
         </div>
       </div>

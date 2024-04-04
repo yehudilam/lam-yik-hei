@@ -1,12 +1,13 @@
 import * as React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Duration from "./Duration";
 import MdxWrapper from "./MdxWrapper";
 
-const ExperienceWrapper = styled.div`
-`;
+const ExperienceWrapper = styled.div``;
 
-const ExperienceItem = ({ exp }: {
+const ExperienceItem = ({
+  exp,
+}: {
   exp: {
     company: string;
     from: string;
@@ -22,9 +23,7 @@ const ExperienceItem = ({ exp }: {
 
         <Duration from={exp.from} to={exp.to} minWidth="155px" />
       </div>
-      <div className="text-xl mb-1">
-        {exp.position}
-      </div>
+      <div className="text-xl mb-1">{exp.position}</div>
 
       <MdxWrapper>
         <exp.mdx />
