@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from "styled-components";
+import { Project } from './HighlightedProjectDialog';
 
 const HighlightedProjectCardWrapper = styled.a`
   width: 300px;
@@ -47,6 +48,9 @@ const CardThumbnail = styled.img`
 
 const HighlightedProjectCard = ({
   project, setSelected
+                                }: {
+                                  project: Project,
+                                  setSelected: (project: Project) => void
                                 }) => {
 
   return (

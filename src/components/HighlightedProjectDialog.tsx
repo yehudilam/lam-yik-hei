@@ -1,11 +1,13 @@
 import * as React from 'react';
-import Dialog from '@mui/material/Dialog';
+// import Dialog from '@mui/material/Dialog';
 import styled from 'styled-components';
 import MdxWrapper from "./MdxWrapper";
 import SectionDivider from "./SectionDivider";
-import TocIcon from '@mui/icons-material/Toc';
-import Close from '@mui/icons-material/Close';
-import {IconButton} from "@mui/material";
+import Dialog from './Dialog';
+import IconButton from './IconButton';
+// import TocIcon from '@mui/icons-material/Toc';
+// import Close from '@mui/icons-material/Close';
+// import {IconButton} from "@mui/material";
 
 const ProjectBanner = styled.div`
   max-height: 400px;
@@ -27,7 +29,17 @@ const ProjectDialogContent = styled.section`
   }
 `;
 
-const HighlightedProjectDialog = ({ project, onClose }) => {
+export interface Project{
+  title: string;
+  image: string;
+  stack: string[];
+  mdx: any;
+}
+
+const HighlightedProjectDialog = ({ project, onClose }: {
+  project?: Project,
+  onClose: () => void,
+}) => {
   if(!project){
     return <></>
   }
@@ -46,7 +58,7 @@ const HighlightedProjectDialog = ({ project, onClose }) => {
           <h1 className="text-4xl mb-4">{project.title}</h1>
 
           <div className="flex justify-start mb-4">
-            <TocIcon />
+            {/* <TocIcon /> */}
 
             <div className="ml-1 mr-2">Stack:</div>
 
@@ -62,7 +74,20 @@ const HighlightedProjectDialog = ({ project, onClose }) => {
 
         <div className="absolute right-0 top-0 pr-2 pt-2">
           <IconButton onClick={onClose}>
-            <Close />
+          <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
           </IconButton>
         </div>
       </div>

@@ -4,7 +4,7 @@ import qbsMdx from '../mdx/experiences/qbs.mdx';
 import ztoreMdx from '../mdx/experiences/ztore.mdx';
 import trifectahMdx from '../mdx/experiences/trifectah.mdx';
 import cuhkMdx from '../mdx/experiences/cuhk.mdx';
-import edfMdx from '../mdx/experiences/edf';
+import edfMdx from '../mdx/experiences/edf.mdx';
 import ExperienceItem from "./ExperienceItem";
 
 const experiences = [

@@ -17,7 +17,7 @@ import alfredMdx from '../mdx/highlighted-projects/alfred.mdx';
 import telegramMdx from '../mdx/highlighted-projects/telegramBot.mdx';
 import roadhkMdx from '../mdx/highlighted-projects/roadhk.mdx';
 import {useState} from "react";
-import HighlightedProjectDialog from "./HighlightedProjectDialog";
+import HighlightedProjectDialog, { Project } from "./HighlightedProjectDialog";
 import styled from "styled-components";
 
 const projects = [
@@ -91,7 +91,7 @@ const ProjectsWrapper = styled.div`
 `;
 
 const HighlightedProject = () => {
-  const [selectedProject, setSelected] = useState(undefined);
+  const [selectedProject, setSelected] = useState<Project>();
 
   return (
     <>
