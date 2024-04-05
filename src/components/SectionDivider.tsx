@@ -3,10 +3,7 @@ import * as React from "react";
 
 const SectionDivider = () => (
   <div
-    // sx={{
-    //   margin: '0 1rem 2rem 1rem',
-    // }}
-    className="mx-4 mb-6"
+    className="mx-4 mb-8 border-b border-gray-300"
   />
 );
 
