@@ -1,5 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 import styled from "styled-components";
+import { Project } from "./HighlightedProjectDialog";
 
 const HighlightedProjectCardWrapper = styled.a`
   width: 300px;
@@ -8,22 +9,22 @@ const HighlightedProjectCardWrapper = styled.a`
   margin-bottom: 12px;
   border-radius: 1rem;
   cursor: pointer;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
-  .project-title{
+
+  .project-title {
     color: black;
   }
-  
-  @media (min-width: 500px) and (max-width: 768px){
+
+  @media (min-width: 500px) and (max-width: 768px) {
     width: calc(50% - 16px);
     gap: 0;
     margin-right: 0;
-    
-    :nth-child(odd){
+
+    :nth-child(odd) {
       margin-right: 16px;
     }
   }
@@ -32,7 +33,7 @@ const HighlightedProjectCardWrapper = styled.a`
     width: 300px;
     margin: 0 auto 12px auto;
 
-    :nth-child(odd){
+    :nth-child(odd) {
       margin-right: auto;
     }
   }
@@ -46,9 +47,12 @@ const CardThumbnail = styled.img`
 `;
 
 const HighlightedProjectCard = ({
-  project, setSelected
-                                }) => {
-
+  project,
+  setSelected,
+}: {
+  project: Project;
+  setSelected: (project: Project) => void;
+}) => {
   return (
     <HighlightedProjectCardWrapper
       onClick={() => setSelected(project)}
@@ -59,7 +63,7 @@ const HighlightedProjectCard = ({
       </div>
       <div className="project-title leading-10">{project.title}</div>
     </HighlightedProjectCardWrapper>
-  )
+  );
 };
 
 export default HighlightedProjectCard;

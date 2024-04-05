@@ -1,12 +1,12 @@
 import * as React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const MdxWrapper = styled.div`
   & a {
     color: blue;
     text-decoration: underline;
   }
-  
+
   & p {
     margin-bottom: 8px;
   }
@@ -16,9 +16,8 @@ const MdxWrapper = styled.div`
     margin-bottom: 8px;
     padding-left: 20px;
   }
-  
+
   & ul > li {
-    
   }
 
   & em {
