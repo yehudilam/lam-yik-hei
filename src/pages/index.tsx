@@ -1,51 +1,17 @@
 import * as React from "react";
-import styled from "styled-components";
 import img6484 from "../images/resized-IMG_6484.jpg";
 import lyhProfile from "../images/lam-yik-hei-profile.png";
-import HighlightedProject from "../components/HighlightedProject";
+import HighlightedProject from "../components/Hightlighted/HighlightedProject";
 import MoreAboutMe from "../mdx/moreAboutMe.mdx";
 import WorkingExperiences from "../components/WorkingExperiences";
 import Duration from "../components/Duration";
 import MdxWrapper from "../components/MdxWrapper";
 import SectionDivider from "../components/SectionDivider";
-
-const MainContent = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px;
-  position: relative;
-
-  & a {
-    color: blue;
-  }
-
-  @media (max-width: 500px) {
-    padding: 24px 12px;
-  }
-`;
-
-const BannerImage = styled.img`
-  max-height: 400px;
-  object-fit: cover;
-  width: 100%;
-`;
-
-const ProfilePic = styled.img`
-  height: 120px;
-  width: 120px;
-  border-radius: 100%;
-  position: absolute;
-  top: -60px;
-  left: 60px;
-
-  @media (max-width: 500px) {
-    left: 30px;
-  }
-`;
+import { BannerImage, MainContent, ProfilePic } from "../components/index.styled";
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className="relative">
       <div>
         <BannerImage src={img6484} />
       </div>

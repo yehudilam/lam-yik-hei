@@ -12,9 +12,11 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-postcss",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `Lam Yik Hei - Web Developer`,
+        start_url: `/`,
+        icon: `src/images/favicon.png`,
       },
     },
     "gatsby-plugin-mdx",

@@ -2,20 +2,20 @@ import React from "react";
 
 const Dialog = ({
   open,
-  closeModal,
+  onClose,
   children,
 }: {
   open: boolean;
-  closeModal: () => void;
+  onClose: () => void;
   children?: React.ReactNode;
 }) => {
   return (
     <div
       className={`${open ? "fixed" : "hidden"} top-0 left-0 bg-gray-600 bg-opacity-50 w-full h-screen flex justify-center items-center z-50 shadow-lg`}
-      onClick={closeModal}
+      onClick={onClose}
       aria-hidden={!open}
       aria-modal
-    ></div>
+    >{children}</div>
   );
 };
 

@@ -1,15 +1,15 @@
 import React from "react";
 
 const IconButton = ({
-  closeModal,
+  onClick,
   children,
 }: {
-  closeModal: () => void;
+  onClick: () => void;
   children?: React.ReactNode;
 }) => {
   return (
     <button
-      onClick={closeModal}
+      onClick={onClick}
       aria-label="Close modal"
       className="absolute right-2 top-2 cursor-pointer hover:bg-gray-100"
     >
