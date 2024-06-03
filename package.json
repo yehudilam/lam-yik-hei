@@ -19,7 +19,7 @@
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
     "autoprefixer": "^10.4.19",
-    "gatsby": "^5.13.3",
+    "gatsby": "^5.13.6",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
