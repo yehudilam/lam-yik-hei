@@ -12,7 +12,7 @@ jobs:
       - name: Set legacy peer deps true
         # hard code for npm
         run: npm config set legacy-peer-deps true
-      - run: npm ci && npm run build
+      - run: yarn install --frozen-lockfile && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
