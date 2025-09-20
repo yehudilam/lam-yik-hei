@@ -19,11 +19,10 @@ const IndexPage = () => {
       <MainContent>
         <ProfilePic src={lyhProfile} />
 
-        <h1 className="text-6xl mb-2 mt-16">LAM Yik Hei</h1>
+        <h1 className="text-6xl mb-2 mt-16">LAM, Yik Hei</h1>
 
-        <nav className="flex flex-start items-center mb-8 divide-x flex-wrap">
+        <div className="flex flex-start items-center mb-8 divide-x flex-wrap">
           <div className="pr-2">📧 yehudi.lam@gmail.com</div>
-          <div className="px-2">☎️ +852 5403 8617</div>
           <div className="px-2">
             <a
               target="_blank"
@@ -51,7 +50,7 @@ const IndexPage = () => {
               Notion
             </a>
           </div>
-        </nav>
+        </div>
 
         <section className="mb-8">
           <h2 className="text-3xl mb-2">Experiences</h2>
