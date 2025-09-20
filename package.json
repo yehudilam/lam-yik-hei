@@ -1,8 +1,8 @@
 {
-  "name": "my-gatsby-site",
+  "name": "lam-yik-hei",
   "version": "1.0.0",
   "private": true,
-  "description": "my-gatsby-site",
+  "description": "Lam Yik Hei",
   "author": "yehudi lam",
   "keywords": [
     "gatsby"
@@ -26,15 +26,15 @@
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "postcss": "^8.4.38",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8",
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
     "@types/node": "^20.14.10",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.25",
     "prettier": "^3.2.5",
     "typescript": "^5.5.3"
   }
