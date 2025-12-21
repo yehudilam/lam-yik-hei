@@ -56,7 +56,7 @@ const HighlightedProjectCard = ({
   return (
     <HighlightedProjectCardWrapper
       onClick={() => setSelected(project)}
-      className="drop-shadow border border-grey-200 hover:shadow-lg hover:brightness-90"
+      className="shadow-drop border border-gray-200 hover:shadow-lg hover:brightness-90"
     >
       <div className="flex-1 overflow-hidden">
         <CardThumbnail src={project.image} />
