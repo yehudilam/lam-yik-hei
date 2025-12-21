@@ -1,7 +1,7 @@
 import * as React from "react";
 import img6484 from "../images/resized-IMG_6484.jpg";
 import lyhProfile from "../images/lam-yik-hei-profile.png";
-import HighlightedProject from "../components/Hightlighted/HighlightedProject";
+import HighlightedProject from "../components/Highlighted/HighlightedProject";
 import MoreAboutMe from "../mdx/moreAboutMe.mdx";
 import WorkingExperiences from "../components/WorkingExperiences";
 import Duration from "../components/Duration";
