@@ -21,7 +21,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "^10.4.22",
     "gatsby": "^5.15.0",
-    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-plugin-mdx": "^5.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
