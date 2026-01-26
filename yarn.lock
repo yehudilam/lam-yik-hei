@@ -5804,10 +5804,10 @@ gatsby-plugin-postcss@^6.13.1:
     "@babel/runtime" "^7.20.13"
     postcss-loader "^7.3.4"
 
-gatsby-plugin-styled-components@^6.13.1:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.15.0.tgz#a68a468de62a3fd80ca0e17abf0c31af919c4bc6"
-  integrity sha512-Jc1/3K4pQcEUof6KQOsFohIlMKZsc5A7Ke/Jvi6rSOBjxoCZTvPODtIvOhoGCzufu9ghj6h0CKm8nBdzjwoA/A==
+gatsby-plugin-styled-components@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.16.0.tgz#9f87307b5a5ffa3aa76631854b910df9b273d3b6"
+  integrity sha512-9OSmKbr4rlcklVejqG+UVsmvsJJAi8tD1x/8hVN+b4zrCzKmFJWw5MiHDI4rDsxm26T6GxN4SSqOWH/UCro1bg==
   dependencies:
     "@babel/runtime" "^7.20.13"
 
